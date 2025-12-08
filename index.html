@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Anuradha & Poornima — Wedding Invitation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: 'Georgia', serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+       background-image: url("1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    /* Overlay for readability */
+    .overlay {
+        background: rgba(255, 240, 244, 0.6);
+        min-height: 100vh;
+        padding: 40px 20px;
+    }
+
+    /* Container */
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* Banner */
+    .banner {
+        color: #fff;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+        margin-bottom: 20px;
+    }
+    .banner h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    /* Navigation inside banner */
+    .nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    .nav a {
+        padding: 12px 25px;
+        background-color: rgba(122, 43, 58, 0.6);
+        border-radius: 25px;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .nav a:hover {
+        background-color: rgba(234, 183, 198, 0.9);
+        color: #7a2b3a;
+        transform: translateY(-3px);
+    }
+
+    /* Sections */
+    section {
+        margin-bottom: 50px;
+        background: rgba(255,255,255,0.5);
+        padding: 25px 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    section h2 {
+        color: #7a2b3a;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+    section p {
+        font-size: 16px;
+        line-height: 1.6;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    }
+
+    /* Slideshow */
+    .slideshow-container {
+        position: relative;
+        max-width: 700px;
+        margin: 30px auto;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+    .slide {
+        display: none;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .active-slide {
+        display: block;
+        animation: fade 1s;
+    }
+    @keyframes fade {
+        from {opacity: 0.4;}
+        to {opacity: 1;}
+    }
+
+    /* Countdown */
+    .countdown {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    .countdown .block {
+        background: #fff;
+        border-radius: 12px;
+        padding: 15px 20px;
+        text-align: center;
+        min-width: 80px;
+        box-shadow: 0 6px 18px rgba(122,43,58,0.1);
+    }
+    .countdown .num {
+        font-size: 24px;
+        font-weight: bold;
+        color: #e07ea0;
+    }
+    .countdown .label {
+        font-size: 12px;
+        color: #7a2b3a;
+        margin-top: 5px;
+    }
+
+    /* Schedule */
+    .schedule {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+        text-align: left;
+        background: #fff6f7;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 6px 18px rgba(122,43,58,0.05);
+    }
+    .schedule h3 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .schedule .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px dashed #fdeef6;
+    }
+
+    /* Buttons */
+    .btn {
+        display: inline-block;
+        margin: 10px 10px 30px 10px;
+        padding: 12px 20px;
+        background: #7a2b3a;
+        color: #fff;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s ease;
+    }
+    .btn:hover {
+        background: #e07ea0;
+        color: #fff;
+        transform: translateY(-3px);
+    }
+
+    .footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #6b6b6b;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="overlay">
+    <div class="container">
+        <!-- Banner -->
+        <div class="banner" id="home">
+            <h1>Anuradha & Poornima</h1>
+            <div class="nav">
+                <a href="#home">HOME</a>
+                <a href="#aboutus">ABOUT US</a>
+                <a href="#venue">VENUE</a>
+            </div>
+        </div>
+
+        <!-- HOME Section -->
+        <section>
+            <h2>Welcome</h2>
+            <p>With immense joy and happiness, we, Anuradha D/O Mr. Sumanadasa and Mrs. Kanthi Ramya, and Poornima D/O Mr. Kumar and Mrs. Latha, cordially invite you to celebrate the wedding of our beloved daughters.</p>
+        </section>
+
+        <!-- ABOUT US Section -->
+        <section id="aboutus">
+            <h2>About Us</h2>
+            <p>We are excited to share our journey together. Here are some moments from our pre-shoot photos.</p>
+            
+
+            <div class="slideshow-container">
+    <img class="slide active-slide" src="1.jpg" alt="Pre-shoot 1">
+    <img class="slide" src="2.jpg" alt="Pre-shoot 2">
+    <img class="slide" src="1.jpg" alt="Pre-shoot 1">
+</div>
+
+        </section>
+
+        <!-- VENUE Section -->
+        <section id="venue">
+            <h2>Wedding Details</h2>
+            <p>Date: 4th May 2026<br>
+               Time: 4:00 PM<br>
+               Venue: Flower Garden Resort, Ella — Diamond Ballroom</p>
+
+            <!-- Countdown -->
+            <h2>Just some hours...</h2>
+            <div class="countdown">
+                <div class="block"><div class="num" id="days">0</div><div class="label">DAYS</div></div>
+                <div class="block"><div class="num" id="hours">0</div><div class="label">HOURS</div></div>
+                <div class="block"><div class="num" id="minutes">0</div><div class="label">MINUTES</div></div>
+                <div class="block"><div class="num" id="seconds">0</div><div class="label">SECONDS</div></div>
+            </div>
+
+            <!-- Schedule -->
+            <div class="schedule">
+                <h3>Schedule</h3>
+                <div class="row"><div>10:54 AM</div><div>Registration</div></div>
+                <div class="row"><div>11:10 AM</div><div>Couple Entrance</div></div>
+                <div class="row"><div>03:20 PM</div><div>Going Away</div></div>
+            </div>
+
+            <!-- Buttons -->
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Flower+Garden+Resort+Ella" target="_blank">Get Directions</a>
+            <a class="btn" id="addCalendar" href="#">Add to Google Calendar</a>
+        </section>
+
+        <div class="footer">&copy; 2026 Anuradha & Poornima 💕</div>
+    </div>
+</div>
+
+<script>
+    // Countdown Timer
+    const weddingDate = new Date("2026-05-04T16:00:00");
+    function updateCountdown(){
+        const now = new Date();
+        const diff = weddingDate - now;
+        if(diff <= 0) return;
+        const days = Math.floor(diff / (1000*60*60*24));
+        const hours = Math.floor((diff / (1000*60*60)) % 24);
+        const minutes = Math.floor((diff / (1000*60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Slideshow
+    const slides = document.querySelectorAll(".slide");
+    let currentSlide = 0;
+    function showSlide(index){
+        slides.forEach((s,i)=> s.classList.remove("active-slide"));
+        slides[index].classList.add("active-slide");
+    }
+    function nextSlide(){
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+    setInterval(nextSlide, 3000);
+
+    // Add to Google Calendar
+    document.getElementById("addCalendar").addEventListener("click", function(e){
+        e.preventDefault();
+        const start = weddingDate.toISOString().replace(/-|:|\.\d\d\d/g,"");
+        const endDate = new Date(weddingDate.getTime() + 3*60*60*1000);
+        const end = endDate.toISOString().replace(/-|:|\.\d\d\d/g,"");
+        const text = encodeURIComponent("Anuradha & Poornima — Wedding");
+        const details = encodeURIComponent("Flower Garden Resort, Ella — Diamond Ballroom");
+        const location = encodeURIComponent("Flower Garden Resort, Ella");
+        const url = `https://www.google.com/calendar/render?action=TEMPLATE&text=${text}&details=${details}&location=${location}&dates=${start}/${end}`;
+        window.open(url, "_blank");
+    });
+</script>
+</body>
+</html>
